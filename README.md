@@ -6,16 +6,21 @@ I build native iOS applications, AI-assisted tools, and software at the intersec
 
 ## Featured projects
 
-### [Swipick · 择影](https://github.com/Mars-Kinga/swipick)
+### [Swipick | Native iOS Photo Management App](https://github.com/Mars-Kinga/swipick)
 
-A native iOS photo-cleanup app that brings swipe-based review and on-device cleanup suggestions into one workflow. Users can compare similar photos, review duplicate files and old temporary screenshots, undo decisions, and resume later. Deletions, favorites and album assignments are confirmed before being written to the photo library.
+**iOS Developer · Sep – Oct 2026**
 
-- **On-device analysis:** Vision image features and text recognition identify review candidates; CryptoKit resource hashes verify duplicate originals.
-- **Reliable media workflows:** SwiftData stores review progress, while persisted conversion records support recovery and verification before deleting Live Photo originals.
-- **Native user experience:** SwiftUI, Liquid Glass, media previews, Chinese and English localization, and Swift Testing coverage for review and suggestion behavior.
+A native iOS app that helps users review unwanted photos and videos and manage their photo library. Swipe-based decisions, on-device AI suggestions, and resumable sessions turn photo cleanup into a guided workflow, with confirmation before changes are applied to the system photo library.
 
-<a href="https://github.com/Mars-Kinga/swipick#界面预览--ui-preview"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/review-home.jpg" width="200" alt="Swipick review home"></a>
-<a href="https://github.com/Mars-Kinga/swipick#界面预览--ui-preview"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/cleanup-suggestions.jpg" width="200" alt="Swipick cleanup suggestions"></a>
+- **Native interface:** Built in Swift and SwiftUI with stacked swipe cards, photo and video previews, and haptic feedback. PhotoKit and SwiftData support resumable reviews and recoverable Live Photo conversion.
+- **On-device AI and recommendations:** Used Vision APIs for feature extraction, OCR, and aesthetic scoring to group similar photos and recommend images to keep. SHA-256 hashing identifies duplicate originals; age and content signals flag outdated temporary screenshots.
+- **Caching, background processing, and power control:** Cached analysis results and limited background workloads according to Low Power Mode and thermal conditions. Suggestion scans use locally available resources without downloading iCloud originals.
+
+<p align="center">
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/review-home.jpg" width="200" alt="Swipick review home"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/cleanup-suggestions.jpg" width="200" alt="Swipick cleanup suggestions"></a>
+</p>
 
 [Explore the project, UI and implementation →](https://github.com/Mars-Kinga/swipick)
 
