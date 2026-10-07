@@ -17,9 +17,9 @@ A native iOS app that helps users review unwanted photos and videos and manage t
 - **Caching, background processing, and power control:** Cached analysis results and limited background workloads according to Low Power Mode and thermal conditions. Suggestion scans use locally available resources without downloading iCloud originals.
 
 <p align="center">
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/review-home.jpg" width="200" alt="Swipick review home"></a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/cleanup-suggestions.jpg" width="200" alt="Swipick cleanup suggestions"></a>
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/home-light.jpg" width="200" alt="Swipick home in light mode"></a>
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/photo-review-light.jpg" width="200" alt="Swipick photo review"></a>
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/suggestions-preview-light.jpg" width="200" alt="Swipick suggestions screenshot in review preview"></a>
 </p>
 
 [Explore the project, UI and implementation →](https://github.com/Mars-Kinga/swipick)
