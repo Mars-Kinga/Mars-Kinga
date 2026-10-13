@@ -19,7 +19,7 @@ A native iOS app that helps users review unwanted photos and videos and manage t
 <p align="center">
   <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/home-light.jpg" width="200" alt="Swipick home in light mode"></a>
   <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/photo-review-light.jpg" width="200" alt="Swipick photo review"></a>
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/suggestions-light.jpg" width="200" alt="Swipick cleanup suggestions"></a>
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/suggestions-light-20261013.png" width="200" alt="Swipick cleanup suggestions"></a>
 </p>
 
 [Explore the project, UI and implementation →](https://github.com/Mars-Kinga/swipick)
