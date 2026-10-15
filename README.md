@@ -1,6 +1,6 @@
 # Hi, I'm Jinjia Zheng
 
-Software engineering student at East China Normal University and former visiting student in computer science at UC Berkeley.
+Software engineering student at East China Normal University and former exchange student in computer science at UC Berkeley.
 
 I build native iOS applications, AI-assisted tools, and software at the intersection of AI and hardware, with experience in embedded AI companion robots, industrial data acquisition, engineering diagnostics, and interactive web applications. I am particularly interested in AI-assisted tools for hardware analysis, testing, and debugging workflows.
 
