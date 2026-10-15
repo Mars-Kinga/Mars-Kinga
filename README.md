@@ -26,6 +26,16 @@ A native iOS app that helps users review unwanted photos and videos and manage t
 
 `Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `Swift Testing`
 
+### [LAND | Local Travel Knowledge iOS App](https://github.com/Mars-Kinga/LAND)
+
+A native SwiftUI travel assistant for outbound travelers. LAND combines city exploration, practical local guidance, map-based places, and saved content, with published knowledge kept separate from source collection and review.
+
+- **iOS app:** SwiftUI, MapKit, local content packages, accessibility-aware interactions, and offline demo data.
+- **Data and review pipeline:** [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) handles bounded source collection, Raw / SourceContent records, deterministic processing, local classification, provenance, human review, and versioned release preparation.
+- **Publishing boundary:** Community posts, personal experiences, and dynamic policy or transport information do not become official facts automatically; only reviewed, sourced, time-bounded content can enter an app release.
+
+`Swift` `SwiftUI` `MapKit` `Python` `SQLite` `Data Pipelines` `Human Review`
+
 ### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant)
 
 A Python Robot Skill runtime built around a deterministic state machine, optional Qwen text and vision services, a validated local recipe catalog, safety rules, and offline automated tests. Its capability adapters cover speech, display, motion, lighting, and facial expressions and can be replaced by a target robot SDK.
