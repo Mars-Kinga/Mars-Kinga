@@ -26,15 +26,17 @@ A native iOS app that helps users review unwanted photos and videos and manage t
 
 `Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `Swift Testing`
 
-### [LAND | Local Travel Knowledge iOS App](https://github.com/Mars-Kinga/LAND)
+### [LAND-DATA | Social Content Extraction & Review Pipeline](https://github.com/Mars-Kinga/LAND-DATA)
 
-A native SwiftUI travel assistant for outbound travelers. LAND combines city exploration, practical local guidance, map-based places, and saved content, with published knowledge kept separate from source collection and review.
+A Python data pipeline for turning social-media content into reviewable travel knowledge without treating model output as verified fact.
 
-- **iOS app:** SwiftUI, MapKit, local content packages, accessibility-aware interactions, and offline demo data.
-- **Data and review pipeline:** [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) handles bounded source collection, Raw / SourceContent records, deterministic processing, local classification, provenance, human review, and versioned release preparation.
-- **Publishing boundary:** Community posts, personal experiences, and dynamic policy or transport information do not become official facts automatically; only reviewed, sourced, time-bounded content can enter an app release.
+- **Social content extraction:** Extracts place mentions and recommendation signals from community posts, while preserving source identity, provenance, content versions, and uncertainty.
+- **Structured LLM extraction:** Uses bounded, explicit LLM calls to convert unstructured text into structured places, events, knowledge, and recommendation signals; the default deterministic path makes zero model calls.
+- **Prompt iteration:** Iterates prompts and extraction rules against known error cases to reduce false place matches, context leakage, unsupported claims, and other recurring misclassifications.
+- **Precision / Recall evaluation:** Uses human-labeled regression fixtures and Precision / Recall metrics to measure extraction quality, protect clean cases, and detect regressions before broader processing.
+- **Post-validation and human review:** Applies schema, evidence, provenance, coordinate, identity, and policy checks after extraction, then routes unresolved or low-confidence results through an append-only human review workflow and explicit release gates.
 
-`Swift` `SwiftUI` `MapKit` `Python` `SQLite` `Data Pipelines` `Human Review`
+`Python` `LLM APIs` `Prompt Engineering` `Precision / Recall` `SQLite` `Human Review`
 
 ### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant)
 
