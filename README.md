@@ -1,60 +1,50 @@
-# Hi, I'm Jinjia Zheng
+# Hi, I'm Jinjia (Mars) Zheng 👋
 
-Software engineering student at East China Normal University and former exchange student in computer science at UC Berkeley.
+I'm a Software Engineering student at East China Normal University and a former computer science exchange student at UC Berkeley. I build native iOS apps, AI-assisted software tools, and systems that connect software with hardware. I care about understandable user decisions, measured performance, and reliable workflows.
 
-I build native iOS applications, AI-assisted tools, and software at the intersection of AI and hardware, with experience in embedded AI companion robots, industrial data acquisition, engineering diagnostics, and interactive web applications. I am particularly interested in AI-assisted tools for hardware analysis, testing, and debugging workflows.
+Based in Shanghai · Open to a six-month full-time software engineering internship · [Explore my repositories](https://github.com/Mars-Kinga?tab=repositories)
 
-## Featured projects
+## Featured project: [Swipick · 择影](https://github.com/Mars-Kinga/swipick)
 
-### [Swipick | Native iOS Photo Management App](https://github.com/Mars-Kinga/swipick)
+A native iPhone photo-management app built with Swift and SwiftUI. Review photos one swipe at a time, resume later, and confirm changes before they reach the system photo library.
 
-**iOS Developer · Sep – Oct 2026**
-
-A native iOS app that helps users review unwanted photos and videos and manage their photo library. Swipe-based decisions, on-device AI suggestions, and resumable sessions turn photo cleanup into a guided workflow, with confirmation before changes are applied to the system photo library.
-
-- **Native interface:** Built in Swift and SwiftUI with stacked swipe cards, photo and video previews, and haptic feedback. PhotoKit and SwiftData support resumable reviews and recoverable Live Photo conversion.
-- **On-device AI and recommendations:** Used Vision APIs for feature extraction, OCR, and aesthetic scoring to group similar photos and recommend images to keep. SHA-256 hashing identifies duplicate originals; age and content signals flag outdated temporary screenshots.
-- **Caching, background processing, and power control:** Cached analysis results and limited background workloads according to Low Power Mode and thermal conditions. Suggestion scans use locally available resources without downloading iCloud originals.
+- **On-device recommendations:** Vision image features, OCR, and aesthetic and face-capture quality scores help group similar photos and suggest which to keep; SHA-256 checks complete resources for exact duplicates.
+- **Recoverable review:** PhotoKit and SwiftData support staged decisions, resumable sessions, and verified Live Photo-to-still conversion.
+- **Performance and power:** Incremental SQLite caching avoids repeat analysis. Background work adjusts to charging, Low Power Mode, and thermal conditions.
 
 <p align="center">
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/home-light.jpg" width="200" alt="Swipick home in light mode"></a>
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/home-light.jpg" width="200" alt="Swipick home screen"></a>
   <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/photo-review-light.jpg" width="200" alt="Swipick photo review"></a>
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/suggestions-light-20261013.png" width="200" alt="Swipick cleanup suggestions"></a>
+  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/suggestions-light-20261013.png" width="200" alt="Swipick suggestions"></a>
 </p>
 
-[Explore the project, UI and implementation →](https://github.com/Mars-Kinga/swipick)
+[See the UI, implementation, and build instructions →](https://github.com/Mars-Kinga/swipick)
 
-`Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `Swift Testing`
+`Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `SQLite`
 
-### [LAND-DATA | Social Content Extraction & Review Pipeline](https://github.com/Mars-Kinga/LAND-DATA)
+## More projects
 
-A Python data pipeline for turning social-media content into reviewable travel knowledge without treating model output as verified fact.
+### [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) · AI-assisted data tooling
 
-- **Social content extraction:** Extracts place mentions and recommendation signals from community posts, while preserving source identity, provenance, content versions, and uncertainty.
-- **Structured LLM extraction:** Uses bounded, explicit LLM calls to convert unstructured text into structured places, events, knowledge, and recommendation signals; the default deterministic path makes zero model calls.
-- **Prompt iteration:** Iterates prompts and extraction rules against known error cases to reduce false place matches, context leakage, unsupported claims, and other recurring misclassifications.
-- **Precision / Recall evaluation:** Uses human-labeled regression fixtures and Precision / Recall metrics to measure extraction quality, protect clean cases, and detect regressions before broader processing.
-- **Post-validation and human review:** Applies schema, evidence, provenance, coordinate, identity, and policy checks after extraction, then routes unresolved or low-confidence results through an append-only human review workflow and explicit release gates.
+A Python pipeline that turns open and social content into reviewable travel knowledge. It uses deterministic local processing by default, optional bounded LLM extraction, provenance checks, labeled regression cases, and an append-only human review workflow before release.
 
-`Python` `LLM APIs` `Prompt Engineering` `Precision / Recall` `SQLite` `Human Review`
+`Python` `SQLite` `LLM APIs` `Evaluation` `Human Review`
 
-### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant)
+### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant) · Robot-side software
 
-A Python Robot Skill runtime built around a deterministic state machine, optional Qwen text and vision services, a validated local recipe catalog, safety rules, and offline automated tests. Its capability adapters cover speech, display, motion, lighting, and facial expressions and can be replaced by a target robot SDK.
+A guided-cooking runtime built around a deterministic state machine, optional Qwen text and vision services, safety rules, mock capability adapters, and offline tests. The public project demonstrates the software workflow; integration with a physical robot depends on its SDK.
 
-`Python` `LLM APIs` `Computer Vision` `State Machines` `Test Automation`
+`Python` `Computer Vision` `State Machines` `Test Automation`
 
-### [Online Museum](https://github.com/Mars-Kinga/OnlineMuseum)
+### [Online Museum](https://github.com/Mars-Kinga/OnlineMuseum) · Team web project
 
-A responsive Vue 3 museum experience with an interactive Silk Road map, country pages, and a mobile-friendly 3D exhibition hall containing three selectable exhibits.
+A Vue 3 digital museum of Central Asia along the Silk Road, with an interactive map, country pages, and a 3D exhibition hall. This is a team repository.
 
-`Vue 3` `JavaScript` `Vue Router` `model-viewer` `Responsive Design`
+`Vue 3` `JavaScript` `model-viewer` `Responsive Design`
 
 ## Technical focus
 
-- **Native iOS development:** Swift, SwiftUI, PhotoKit, SwiftData, media interactions, local persistence, and on-device image analysis
-- **AI and machine learning:** LLM API integration, TensorFlow Lite Micro, PyTorch, scikit-learn
-- **Embedded and hardware workflows:** ESP32-S3, FreeRTOS, peripheral integration, TCP/IP, data acquisition and diagnostics
-- **Software and data:** Python, JavaScript/TypeScript, C/C++, C#/.NET, SQL, REST APIs, automated testing
-
-Currently based in Shanghai and open to a six-month full-time software engineering internship.
+- **iOS:** SwiftUI, PhotoKit, SwiftData, on-device image analysis, local persistence, and media interactions
+- **AI and data:** Python, LLM APIs, evaluation, PyTorch, scikit-learn, and TensorFlow Lite Micro
+- **Hardware workflows:** ESP32-S3, FreeRTOS, TCP/IP, data acquisition, and diagnostics
+- **Software engineering:** C/C++, JavaScript/TypeScript, C#/.NET, SQL, REST APIs, and automated testing
