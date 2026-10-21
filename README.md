@@ -4,7 +4,7 @@ I'm a Software Engineering student at East China Normal University and a former 
 
 Based in Shanghai · Open to a six-month full-time software engineering internship · [Explore my repositories](https://github.com/Mars-Kinga?tab=repositories)
 
-## Featured project: [Swipick · 择影](https://github.com/Mars-Kinga/swipick)
+## Featured project: [Picora · 轻选](https://github.com/Mars-Kinga/picora)
 
 A native iPhone photo-management app built with Swift and SwiftUI. Review photos one swipe at a time, resume later, and confirm changes before they reach the system photo library.
 
@@ -13,12 +13,13 @@ A native iPhone photo-management app built with Swift and SwiftUI. Review photos
 - **Performance and power:** Incremental SQLite caching avoids repeat analysis. Background work adjusts to charging, Low Power Mode, and thermal conditions.
 
 <p align="center">
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/home-light.jpg" width="200" alt="Swipick home screen"></a>
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/photo-review-light.jpg" width="200" alt="Swipick photo review"></a>
-  <a href="https://github.com/Mars-Kinga/swipick"><img src="https://raw.githubusercontent.com/Mars-Kinga/swipick/main/docs/screenshots/suggestions-light-20261013.png" width="200" alt="Swipick suggestions"></a>
+  <a href="https://github.com/Mars-Kinga/picora"><img src="https://github.com/Mars-Kinga/picora/releases/download/readme-media-20261021/suggestions-light-20261013.png" width="200" alt="Picora photo suggestions"></a>
+  <a href="https://github.com/Mars-Kinga/picora"><img src="https://github.com/Mars-Kinga/picora/releases/download/readme-media-20261021/iphone-duo-suggestions.png" width="510" alt="Picora wide suggestions and photo comparison"></a>
 </p>
 
-[See the UI, implementation, and build instructions →](https://github.com/Mars-Kinga/swipick)
+[View the project and privacy policy →](https://github.com/Mars-Kinga/picora) · [中文隐私政策](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.zh-CN.html) · [English privacy policy](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.en.html)
+
+The public repository contains the project overview and privacy policy; the app source is kept private.
 
 `Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `SQLite`
 
