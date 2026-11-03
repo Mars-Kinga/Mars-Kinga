@@ -14,7 +14,10 @@ A native iPhone and iPad photo-management app built with Swift and SwiftUI. Revi
 - **Performance and power:** Incremental SQLite caching avoids repeat analysis. Background work adjusts to charging, Low Power Mode, and thermal conditions.
 
 <p align="center">
+  <a href="https://github.com/Mars-Kinga/picora"><img src="https://raw.githubusercontent.com/Mars-Kinga/Mars-Kinga/main/assets/picora-home-img-9112.png" width="200" alt="Picora home screen with cleanup totals, continue reviewing, and monthly photo groups"></a>
   <a href="https://github.com/Mars-Kinga/picora"><img src="https://github.com/Mars-Kinga/picora/releases/download/readme-media-20261021/suggestions-light-20261013.png" width="200" alt="Picora photo suggestions"></a>
+</p>
+<p align="center">
   <a href="https://github.com/Mars-Kinga/picora"><img src="https://github.com/Mars-Kinga/picora/releases/download/readme-media-20261021/iphone-duo-suggestions.png" width="510" alt="Picora wide suggestions and photo comparison"></a>
 </p>
 
