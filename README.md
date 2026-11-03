@@ -48,9 +48,9 @@ Its development-stage location-verification harness includes read-only tool cont
 
 ### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant) · Guided cooking and robot workflows
 
-A Python runtime built around a deterministic cooking state machine, local-first recipe lookup, schema-validated Qwen generation, camera ingredient questions, and five-channel robot feedback. The public source includes 100 fixed recipes and offline tests; physical robot adapters are mocked, and voice/device behavior requires separate validation.
+A Python guided-cooking runtime with a LAN web console, 440 fixed recipes, local-first lookup, schema-validated Qwen generation, and camera ingredient questions. A deterministic state machine manages recipe selection, ingredient confirmation, cooking steps, timers, pause/resume, and completion.
 
-My newer local implementation adds a LAN web console, 440 fixed recipes, ingredient-based meal options, and video/image-text tutorial import with editable drafts and explicit confirmation. These additions are not yet included on the repository's `main` branch. [See the published scope and setup →](https://github.com/Mars-Kinga/kitchen_assistant#published-version-and-local-development)
+Video and image-text tutorials become editable recipe drafts with source evidence and AI suggestions, then enter the cooking workflow after user confirmation. The public repository includes the console, portable setup scripts, offline Python tests, and UI regression checks. Robot adapters remain simulated; cloud services, voice and physical-device behavior require separate validation. [See the implementation and setup →](https://github.com/Mars-Kinga/kitchen_assistant#quick-start)
 
 `Python` `LLM APIs` `Computer Vision` `State Machines` `Test Automation`
 
