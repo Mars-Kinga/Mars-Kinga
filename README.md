@@ -20,7 +20,7 @@ A native iPhone and iPad photo-management app built with Swift and SwiftUI. Revi
 
 [View the project and privacy policy →](https://github.com/Mars-Kinga/picora) · [中文隐私政策](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.zh-CN.html) · [English privacy policy](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.en.html)
 
-The public repository contains the project overview and privacy policy; the app source is kept private. The current local development build is version 1.1 for iOS / iPadOS 26+, with some feature code still pending synchronization to the private repository. No public App Store or TestFlight download is listed.
+The public repository contains the project overview and privacy policy; the app source is kept private. The current development version is 1.1 for iOS / iPadOS 26+; its feature source and tests are synchronized to the private repository. No public App Store or TestFlight download is listed.
 
 `Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `SQLite`
 
