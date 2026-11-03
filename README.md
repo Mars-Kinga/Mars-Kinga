@@ -26,6 +26,16 @@ The public repository contains the project overview and privacy policy; the app 
 
 ## More projects
 
+### Moby · Edge–cloud AI companion
+
+An ESP32-S3 companion robot with local “Hey Moby” wake detection, LVGL expressions, and a Python Agent Harness connecting Qwen ASR, validated tool execution, and TTS. Device actions use explicit receipts; long-term facts use versioned microSD storage with user-controlled editing and deletion.
+
+The repository contains the P5 speech pipeline. Local P6 development adds automatic preference candidates, selective memory retrieval, and waiting-audio coordination. P6 remains under validation: firmware build/flash and controlled protocol checks do not establish natural voice quality, end-to-end latency, or reliable SD operation.
+
+[Project overview and implementation status →](https://github.com/Mars-Kinga/moby-ai-companion) *(private repository; access required)*
+
+`ESP32-S3` `C/C++` `FreeRTOS` `Python` `Agent Harness` `Speech APIs`
+
 ### [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) · AI-assisted data tooling
 
 A Python/SQLite pipeline for collecting and reviewing travel places and knowledge. Deterministic processing runs by default, with optional LLM extraction, field-level provenance, and separate QAU knowledge and Place release bridges.
