@@ -32,11 +32,13 @@ A Python pipeline that turns open and social content into reviewable travel know
 
 `Python` `SQLite` `LLM APIs` `Evaluation` `Human Review`
 
-### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant) · Robot-side software
+### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant) · Guided cooking and robot workflows
 
-A guided-cooking runtime built around a deterministic state machine, optional Qwen text and vision services, safety rules, mock capability adapters, and offline tests. The public project demonstrates the software workflow; integration with a physical robot depends on its SDK.
+A Python runtime built around a deterministic cooking state machine, local-first recipe lookup, schema-validated Qwen generation, camera ingredient questions, and five-channel robot feedback. The public source includes 100 fixed recipes and offline tests; physical robot adapters are mocked, and voice/device behavior requires separate validation.
 
-`Python` `Computer Vision` `State Machines` `Test Automation`
+My newer local implementation adds a LAN web console, 440 fixed recipes, ingredient-based meal options, and video/image-text tutorial import with editable drafts and explicit confirmation. These additions are not yet included on the repository's `main` branch. [See the published scope and setup →](https://github.com/Mars-Kinga/kitchen_assistant#published-version-and-local-development)
+
+`Python` `LLM APIs` `Computer Vision` `State Machines` `Test Automation`
 
 ### [Online Museum](https://github.com/Mars-Kinga/OnlineMuseum) · Team web project
 
