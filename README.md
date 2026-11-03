@@ -6,10 +6,11 @@ Based in Shanghai · Open to a six-month full-time software engineering internsh
 
 ## Featured project: [Picora · 轻选](https://github.com/Mars-Kinga/picora)
 
-A native iPhone photo-management app built with Swift and SwiftUI. Review photos one swipe at a time, resume later, and confirm changes before they reach the system photo library.
+A native iPhone and iPad photo-management app built with Swift and SwiftUI. Review photos one swipe at a time, resume later, and confirm changes before they reach the system photo library.
 
 - **On-device recommendations:** Vision image features, OCR, and aesthetic and face-capture quality scores help group similar photos and suggest which to keep; SHA-256 checks complete resources for exact duplicates.
-- **Recoverable review:** PhotoKit and SwiftData support staged decisions, resumable sessions, and verified Live Photo-to-still conversion.
+- **Recoverable review:** PhotoKit and SwiftData support staged decisions, a draggable timeline with saved browsing positions, continuous review of deferred photos, and verified Live Photo-to-still conversion.
+- **Adaptive interface:** Portrait and wide layouts follow the available window size. The app supports English, Simplified Chinese, and Traditional Chinese with Taiwan wording.
 - **Performance and power:** Incremental SQLite caching avoids repeat analysis. Background work adjusts to charging, Low Power Mode, and thermal conditions.
 
 <p align="center">
@@ -19,7 +20,7 @@ A native iPhone photo-management app built with Swift and SwiftUI. Review photos
 
 [View the project and privacy policy →](https://github.com/Mars-Kinga/picora) · [中文隐私政策](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.zh-CN.html) · [English privacy policy](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.en.html)
 
-The public repository contains the project overview and privacy policy; the app source is kept private.
+The public repository contains the project overview and privacy policy; the app source is kept private. The current local development build is version 1.1 for iOS / iPadOS 26+, with some feature code still pending synchronization to the private repository. No public App Store or TestFlight download is listed.
 
 `Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `SQLite`
 
