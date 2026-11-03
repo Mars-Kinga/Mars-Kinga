@@ -28,9 +28,13 @@ The public repository contains the project overview and privacy policy; the app 
 
 ### [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) · AI-assisted data tooling
 
-A Python pipeline that turns open and social content into reviewable travel knowledge. It uses deterministic local processing by default, optional bounded LLM extraction, provenance checks, labeled regression cases, and an append-only human review workflow before release.
+A Python/SQLite pipeline for collecting and reviewing travel places and knowledge. Deterministic processing runs by default, with optional LLM extraction, field-level provenance, and separate QAU knowledge and Place release bridges.
 
-`Python` `SQLite` `LLM APIs` `Evaluation` `Human Review`
+Its development-stage location-verification harness includes read-only tool controls, call budgets, SQLite checkpoints, an independent goal gate, and human handoff. A fixed-order replay of 1,004 real records routed 20 cross-source coordinate discrepancies to review; this measures evidence routing, not location accuracy. Model-guided tool selection has been demonstrated on a synthetic case; real-case dynamic evaluation and independent gold labels remain in progress.
+
+[Implementation status and evaluation boundaries →](https://github.com/Mars-Kinga/LAND-DATA/blob/main/docs/implementation-status.md)
+
+`Python` `SQLite` `Agent Harness` `LLM APIs` `Evaluation` `Human Review`
 
 ### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant) · Guided cooking and robot workflows
 
