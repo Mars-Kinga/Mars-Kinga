@@ -1,71 +1,55 @@
-# Hi, I'm Jinjia (Mars) Zheng 👋
+# Jinjia (Mars) Zheng
 
-I'm a Software Engineering student at East China Normal University and a former computer science exchange student at UC Berkeley. I build native iOS apps, AI-assisted software tools, and systems that connect software with hardware. I care about understandable user decisions, measured performance, and reliable workflows.
+I'm a Software Engineering undergraduate at **East China Normal University** (expected graduation: June 2027) and a former Computer Science exchange student at **UC Berkeley** (2025–2026). I am applying for graduate study, with interests in reliable AI agents and intelligent systems that connect software, devices, and people.
 
-Based in Shanghai · Open to a six-month full-time software engineering internship · [Explore my repositories](https://github.com/Mars-Kinga?tab=repositories)
+My projects span agent workflows, embedded voice interaction, and on-device photo analysis. They have led me to questions about how intelligent systems use evidence, recover from failures, and work within practical resource constraints.
 
-## Featured project: [Picora · 轻选](https://github.com/Mars-Kinga/picora)
+## Research interests
 
-A native iPhone and iPad photo-management app built with Swift and SwiftUI. Review photos one swipe at a time, resume later, and confirm changes before they reach the system photo library.
+- **AI agents and evaluation:** Learning from execution experience, tool use, memory, and controlled evaluation of whether improvements transfer to new tasks.
+- **Embedded and edge–cloud intelligence:** Coordinating local sensing and interaction with cloud inference, with attention to latency, resource use, and recovery.
+- **Human–AI interaction:** Making model suggestions understandable and giving users effective ways to review, correct, and control system actions.
 
-- **On-device recommendations:** Vision image features, OCR, and aesthetic and face-capture quality scores help group similar photos and suggest which to keep; SHA-256 checks complete resources for exact duplicates.
-- **Recoverable review:** PhotoKit and SwiftData support staged decisions, a draggable timeline with saved browsing positions, continuous review of deferred photos, and verified Live Photo-to-still conversion.
-- **Adaptive interface:** Portrait and wide layouts follow the available window size. The app supports English, Simplified Chinese, and Traditional Chinese with Taiwan wording.
-- **Performance and power:** Incremental SQLite caching avoids repeat analysis. Background work adjusts to charging, Low Power Mode, and thermal conditions.
+## Current research direction
 
-<p align="center">
-  <a href="https://github.com/Mars-Kinga/picora"><img src="https://raw.githubusercontent.com/Mars-Kinga/Mars-Kinga/main/assets/picora-home-img-9112.png" width="200" alt="Picora home screen with cleanup totals, continue reviewing, and monthly photo groups"></a>
-  <a href="https://github.com/Mars-Kinga/picora"><img src="https://github.com/Mars-Kinga/picora/releases/download/readme-media-20261021/suggestions-light-20261013.png" width="200" alt="Picora photo suggestions"></a>
-</p>
-<p align="center">
-  <a href="https://github.com/Mars-Kinga/picora"><img src="https://github.com/Mars-Kinga/picora/releases/download/readme-media-20261021/iphone-duo-suggestions.png" width="510" alt="Picora wide suggestions and photo comparison"></a>
-</p>
+I am exploring how LLM-based agents can improve through reusable experience and changes to their execution framework. My current work focuses on designing controlled comparisons: separating memory updates from framework changes, tracking versions and execution traces, and evaluating on tasks held apart from development.
 
-[View the project and privacy policy →](https://github.com/Mars-Kinga/picora) · [中文隐私政策](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.zh-CN.html) · [English privacy policy](https://mars-kinga.github.io/picora/privacy/PRIVACY_POLICY.en.html)
+This is ongoing work. I am particularly interested in understanding which improvements generalize across tasks and domains, and what evidence is needed to attribute those improvements to a specific change.
 
-The public repository contains the project overview and privacy policy; the app source is kept private. The current development version is 1.1 for iOS / iPadOS 26+; its feature source and tests are synchronized to the private repository. No public App Store or TestFlight download is listed.
+## Selected projects
 
-`Swift` `SwiftUI` `PhotoKit` `SwiftData` `Vision` `CryptoKit` `SQLite`
+### [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) · Agent workflows and evidence tracking
 
-## More projects
+A Python/SQLite system for collecting, structuring, and reviewing place information. It combines deterministic processing with optional LLM extraction, field-level source tracking, checkpoints, and human review.
 
-### Moby · Edge–cloud AI companion
+The location-verification prototype separates the agent's proposed actions from tool permissions, call budgets, and an independent completion check. Its documented replay experiments examine how conflicting or insufficient evidence is routed to review; broader agent evaluation is ongoing.
 
-An ESP32-S3 companion robot with local “Hey Moby” wake detection, LVGL expressions, and a Python Agent Harness connecting Qwen ASR, validated tool execution, and TTS. Device actions use explicit receipts; long-term facts use versioned microSD storage with user-controlled editing and deletion.
+**Public source:** [Architecture](https://github.com/Mars-Kinga/LAND-DATA/blob/main/docs/architecture.md) · [Implementation and evaluation status](https://github.com/Mars-Kinga/LAND-DATA/blob/main/docs/implementation-status.md)
 
-The repository contains the P5 speech pipeline. Local P6 development adds automatic preference candidates, selective memory retrieval, and waiting-audio coordination. P6 remains under validation: firmware build/flash and controlled protocol checks do not establish natural voice quality, end-to-end latency, or reliable SD operation.
+### [Kitchen Assistant](https://github.com/Mars-Kinga/kitchen_assistant) · Multimodal interaction and workflow control
 
-[Project overview and implementation status →](https://github.com/Mars-Kinga/moby-ai-companion) *(private repository; access required)*
+I developed a Python guided-cooking runtime that combines local recipe lookup, validated LLM generation, image-based ingredient questions, and tutorial import. A deterministic state machine manages confirmation, cooking steps, timers, and pause/resume; users review generated or imported content before using it.
 
-`ESP32-S3` `C/C++` `FreeRTOS` `Python` `Agent Harness` `Speech APIs`
+The repository includes a web console, setup scripts, and automated tests. Robot actions currently use simulated adapters.
 
-### [LAND-DATA](https://github.com/Mars-Kinga/LAND-DATA) · AI-assisted data tooling
+**Public source:** [Architecture](https://github.com/Mars-Kinga/kitchen_assistant/blob/main/docs/ARCHITECTURE.md) · [Setup and tests](https://github.com/Mars-Kinga/kitchen_assistant#quick-start)
 
-A Python/SQLite pipeline for collecting and reviewing travel places and knowledge. Deterministic processing runs by default, with optional LLM extraction, field-level provenance, and separate QAU knowledge and Place release bridges.
+### Moby · Embedded voice interaction
 
-Its development-stage location-verification harness includes read-only tool controls, call budgets, SQLite checkpoints, an independent goal gate, and human handoff. A fixed-order replay of 1,004 real records routed 20 cross-source coordinate discrepancies to review; this measures evidence routing, not location accuracy. Model-guided tool selection has been demonstrated on a synthetic case; real-case dynamic evaluation and independent gold labels remain in progress.
+An ESP32-S3 companion robot project combining local wake-word detection, FreeRTOS task coordination, display expressions, and a Python agent runtime for cloud speech recognition, tool execution, and speech synthesis.
 
-[Implementation status and evaluation boundaries →](https://github.com/Mars-Kinga/LAND-DATA/blob/main/docs/implementation-status.md)
+My work on the project includes voice-pipeline integration, device feedback, and persistent memory. It motivates my interest in the interaction between embedded constraints and agent behavior. The source repository is private; end-to-end hardware validation is ongoing.
 
-`Python` `SQLite` `Agent Harness` `LLM APIs` `Evaluation` `Human Review`
+### [Picora · 轻选](https://github.com/Mars-Kinga/picora) · On-device analysis and user control
 
-### [Kitchen Assistant Robot Skill](https://github.com/Mars-Kinga/kitchen_assistant) · Guided cooking and robot workflows
+A native iPhone and iPad photo-management app I developed with Swift and SwiftUI. Vision features and OCR support local photo suggestions, while PhotoKit and SwiftData support saved review progress and explicit confirmation of library changes.
 
-A Python guided-cooking runtime with a LAN web console, 440 fixed recipes, local-first lookup, schema-validated Qwen generation, and camera ingredient questions. A deterministic state machine manages recipe selection, ingredient confirmation, cooking steps, timers, pause/resume, and completion.
+The project explores how automated recommendations can fit into a recoverable, user-controlled workflow, with incremental caching and background analysis that adapts to device conditions.
 
-Video and image-text tutorials become editable recipe drafts with source evidence and AI suggestions, then enter the cooking workflow after user confirmation. The public repository includes the console, portable setup scripts, offline Python tests, and UI regression checks. Robot adapters remain simulated; cloud services, voice and physical-device behavior require separate validation. [See the implementation and setup →](https://github.com/Mars-Kinga/kitchen_assistant#quick-start)
+**Public overview:** [Features and screenshots](https://github.com/Mars-Kinga/picora#english) · App source is private.
 
-`Python` `LLM APIs` `Computer Vision` `State Machines` `Test Automation`
+## Additional engineering experience
 
-### [Online Museum](https://github.com/Mars-Kinga/OnlineMuseum) · Team web project
+My other work includes C#/.NET industrial data acquisition with TCP communication, binary parsing, and reconnection handling, as well as the team-built [Online Museum](https://github.com/Mars-Kinga/OnlineMuseum), a Vue-based digital museum.
 
-A Vue 3 digital museum of Central Asia along the Silk Road, with an interactive map, country pages, and a 3D exhibition hall. This is a team repository.
-
-`Vue 3` `JavaScript` `model-viewer` `Responsive Design`
-
-## Technical focus
-
-- **iOS:** SwiftUI, PhotoKit, SwiftData, on-device image analysis, local persistence, and media interactions
-- **AI and data:** Python, LLM APIs, evaluation, PyTorch, scikit-learn, and TensorFlow Lite Micro
-- **Hardware workflows:** ESP32-S3, FreeRTOS, TCP/IP, data acquisition, and diagnostics
-- **Software engineering:** C/C++, JavaScript/TypeScript, C#/.NET, SQL, REST APIs, and automated testing
+**Tools I use:** Python, C/C++, Swift/SwiftUI, C#/.NET, SQL/SQLite, ESP32-S3/FreeRTOS, and automated testing.
